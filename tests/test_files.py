@@ -2,8 +2,8 @@ import common
 
 def filecount(path):
     f = common.getfiles(path)
-    return f.len
+    return len(f)
 
 def test_delivered():
-    assert filecount("../data")==0
+    assert filecount("../data")>0
 
