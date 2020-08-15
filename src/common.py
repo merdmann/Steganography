@@ -1,7 +1,10 @@
 from os import walk
 
-def getfiles(mypath):
+def get_files(mypath):
     f = []
     for (dirpath, dirnames, filenames) in walk(mypath):
-        f.extend( filenames )
-        return f
+        f.extend(filenames)
+
+    f=list(filter(lambda x: x.endswith(".pdf"), f))
+
+    return f
