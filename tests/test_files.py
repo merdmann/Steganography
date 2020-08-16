@@ -18,9 +18,9 @@ def test_delivered():
 # reading file 1 and 0. Both are existing and have different number of
 # words as contents.
 def test_read_file():
-    d = read_file(0)
+    d = common.read_file(0)
     assert len(d) > 0
-    e = read_file(1)
+    e = common.read_file(1)
     assert len(e) >  0 and len(d) > 0
     assert len(d) != len(e)
 

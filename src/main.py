@@ -9,4 +9,10 @@ from src import common
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(common.getfiles("../Steganography/data"))
+    print("Start")
+    files = common.get_files("../data")
+
+    for i in enumerate(files):
+        print(i)
+    file_id = int(input("enter file number:"))
+
